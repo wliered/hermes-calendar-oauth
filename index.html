@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hermes Calendar</title>
-<meta name="description" content="Hermes Calendar is a personal calendar and email automation app that helps its owner manage Google Calendar, Gmail, and documents.">
+<meta name="description" content="Hermes Calendar is a personal calendar and email automation app. It helps its owner manage Google Calendar events, Gmail, Drive, Contacts, Sheets, and Docs.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -13,49 +13,67 @@
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web",
   "url": "https://oauth.wliered.com/",
-  "description": "Hermes Calendar is a personal automation app that manages Google Calendar events, Gmail, Drive, Contacts, Sheets, and Docs for its owner's own Google account.",
+  "description": "Hermes Calendar is a personal calendar and email automation application that manages Google Calendar events, Gmail, Drive, Contacts, Sheets, and Docs for its owner's own Google account.",
   "author": { "@type": "Person", "name": "Wilson Hailey" }
 }
 </script>
 <style>
-  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background: #f7f7f8; color: #222; line-height: 1.6; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
-  h1 { font-size: 28px; margin-bottom: 8px; }
-  h2 { font-size: 19px; margin-top: 28px; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background: #f7f7f8; color: #222; line-height: 1.65; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+  h1 { font-size: 30px; margin-bottom: 6px; }
+  h2 { font-size: 20px; margin-top: 32px; border-bottom: 1px solid #e3e3e6; padding-bottom: 6px; }
   a { color: #1a56db; }
-  .card { background: #fff; border: 1px solid #e3e3e6; border-radius: 10px; padding: 24px; }
+  .card { background: #fff; border: 1px solid #e3e3e6; border-radius: 10px; padding: 24px 28px; }
   .nav { margin-bottom: 24px; }
   .nav a { margin-right: 16px; }
+  .tagline { color: #555; font-size: 17px; margin-bottom: 24px; }
+  ul { margin: 8px 0 16px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  td, th { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: 15px; }
+  th { background: #f0f1f3; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="nav">
-    <a href="/">Home</a>
-    <a href="/privacy.html">Privacy Policy</a>
-    <a href="/terms.html">Terms of Service</a>
+    <a href="https://oauth.wliered.com/">Home</a>
+    <a href="https://oauth.wliered.com/privacy.html">Privacy Policy</a>
+    <a href="https://oauth.wliered.com/terms.html">Terms of Service</a>
   </div>
   <div class="card">
     <h1>Hermes Calendar</h1>
-    <p><strong>Hermes Calendar</strong> is a personal calendar and email automation application. It helps its owner, Wilson Hailey, manage his own Google data — Google Calendar events, Gmail, Google Drive files, Contacts, Sheets, and Docs — from privately owned home servers in Austin, TX.</p>
+    <p class="tagline">A personal calendar and email automation application for the Hailey household, Austin, TX.</p>
 
-    <h2>Purpose</h2>
-    <p>The purpose of Hermes Calendar is to automate personal scheduling and email tasks for its owner. It creates and syncs calendar events, reads and sends email, and organizes documents, all at the owner's request.</p>
-    <p>Hermes Calendar performs tasks such as:</p>
+    <h2>About this app</h2>
+    <p><strong>Hermes Calendar</strong> is a private, self-hosted personal assistant application. It automates scheduling, email, and document tasks for its owner, Wilson Hailey, using Google services the owner has explicitly authorized.</p>
+    <p>Hermes Calendar is used exclusively by its owner. It is not a public service and is not offered to other users.</p>
+
+    <h2>Features</h2>
     <ul>
-      <li>Creating and updating Google Calendar events, and syncing the family calendar to a private local calendar server</li>
-      <li>Reading, sending, and organizing Gmail messages</li>
-      <li>Managing Google Drive files, Sheets, and Docs</li>
-      <li>Accessing Google Contacts for reference</li>
+      <li><strong>Calendar automation:</strong> Creates and updates Google Calendar events, and syncs the family calendar to a private local calendar server so it stays available at home.</li>
+      <li><strong>Email assistance:</strong> Reads, sends, and organizes Gmail messages on the owner's behalf.</li>
+      <li><strong>File and document management:</strong> Manages Google Drive files, and reads and creates Google Sheets and Docs.</li>
+      <li><strong>Contacts reference:</strong> Reads Google Contacts to support the owner's workflows.</li>
     </ul>
-    <p>The application is used exclusively by its owner. It is not offered to the public, and no user data is shared, sold, or used for advertising. Access can be revoked at any time from the
-    <a href="https://myaccount.google.com/permissions">Google account permissions page</a>.</p>
+
+    <h2>Data access</h2>
+    <p>To provide the features above, <strong>Hermes Calendar</strong> requests access to the following data from the owner's own Google account. This access is used only to perform tasks the owner initiates, and never for advertising, selling data, or any third-party purpose.</p>
+    <table>
+      <tr><th>Google data</th><th>Why the app needs it</th></tr>
+      <tr><td>Google Calendar</td><td>Create and update events; sync the family calendar to the owner's private server.</td></tr>
+      <tr><td>Gmail</td><td>Read, send, and manage email on the owner's behalf.</td></tr>
+      <tr><td>Google Drive</td><td>Read and upload files when the owner asks.</td></tr>
+      <tr><td>Google Contacts</td><td>Read contact information for reference.</td></tr>
+      <tr><td>Google Sheets and Docs</td><td>Read and create spreadsheets and documents.</td></tr>
+    </table>
+    <p>Access can be reviewed or revoked at any time from the <a href="https://myaccount.google.com/permissions">Google account permissions page</a>. Revoking access immediately stops all data access.</p>
+
+    <h2>Privacy</h2>
+    <p>Please read the <a href="https://oauth.wliered.com/privacy.html">Hermes Calendar Privacy Policy</a> for full details on how your data is handled. By using Hermes Calendar, you agree to its <a href="https://oauth.wliered.com/terms.html">Terms of Service</a>.</p>
 
     <h2>Contact</h2>
     <p>Questions about Hermes Calendar: <a href="mailto:wliered2010@gmail.com">wliered2010@gmail.com</a></p>
-
-    <h2>Policies</h2>
-    <p>See the <a href="/privacy.html">Privacy Policy</a> and <a href="/terms.html">Terms of Service</a> for details.</p>
   </div>
 </div>
 </body>
